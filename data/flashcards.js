@@ -1266,3 +1266,265 @@ const FLASHCARDS = {
     }
   ]
 };
+// --- Flashcards Batch 4: Domain 1 Append ---
+FLASHCARDS.domain1.push(
+  {
+    id: 36,
+    front: "What is a firm element requirement?",
+    back: "Annual training required by broker-dealers for their registered employees."
+  },
+  {
+    id: 37,
+    front: "What is a cooling-off period?",
+    back: "A minimum 20-day waiting period after filing a registration statement."
+  },
+  {
+    id: 38,
+    front: "What is a preliminary prospectus?",
+    back: "A red herring used to market a new issue during the cooling-off period."
+  },
+  {
+    id: 39,
+    front: "What is a final prospectus?",
+    back: "The official offering document delivered at or before confirmation of sale."
+  },
+  {
+    id: 40,
+    front: "What is a restricted person under Rule 5130?",
+    back: "Individuals prohibited from buying IPO shares, such as broker-dealer employees."
+  },
+  {
+    id: 41,
+    front: "What is a stabilization bid?",
+    back: "A bid placed by underwriters to prevent a new issue from falling below the offering price."
+  },
+  {
+    id: 42,
+    front: "What is a syndicate letter?",
+    back: "A document outlining responsibilities and compensation for underwriters."
+  },
+  {
+    id: 43,
+    front: "What is a selling group?",
+    back: "Firms that help distribute a new issue but take no underwriting risk."
+  },
+  {
+    id: 44,
+    front: "What is a due diligence meeting?",
+    back: "A meeting held before the offering to ensure accuracy of disclosures."
+  },
+  {
+    id: 45,
+    front: "What is a prospectus delivery requirement?",
+    back: "The obligation to provide a prospectus to investors during a new issue."
+  }
+);
+// --- Flashcards Batch 4: Domain 2 Append ---
+FLASHCARDS.domain2.push(
+  {
+    id: 165,
+    front: "What is a growth stock?",
+    back: "A stock expected to grow earnings faster than the market."
+  },
+  {
+    id: 166,
+    front: "What is a value stock?",
+    back: "A stock considered undervalued based on fundamentals."
+  },
+  {
+    id: 167,
+    front: "What is a blue-chip stock?",
+    back: "A large, stable, financially strong company with consistent dividends."
+  },
+  {
+    id: 168,
+    front: "What is a cyclical stock?",
+    back: "A stock whose performance is tied to economic cycles."
+  },
+  {
+    id: 169,
+    front: "What is a defensive stock?",
+    back: "A stock that performs relatively well during economic downturns."
+  },
+  {
+    id: 170,
+    front: "What is a penny stock?",
+    back: "A low-priced, speculative security trading under $5."
+  },
+  {
+    id: 171,
+    front: "What is a structured product?",
+    back: "A prepackaged investment combining derivatives and traditional securities."
+  },
+  {
+    id: 172,
+    front: "What is a CMBS?",
+    back: "Commercial mortgage-backed security backed by commercial real estate loans."
+  },
+  {
+    id: 173,
+    front: "What is an ABS?",
+    back: "Asset-backed security supported by loans such as credit cards or auto loans."
+  },
+  {
+    id: 174,
+    front: "What is a tranche?",
+    back: "A slice of a structured product with specific risk and maturity characteristics."
+  }
+);
+// --- Flashcards Batch 4: Domain 3 Append ---
+FLASHCARDS.domain3.push(
+  {
+    id: 251,
+    front: "What is a market-on-close order?",
+    back: "An order executed as close to the market close as possible."
+  },
+  {
+    id: 252,
+    front: "What is a limit-on-close order?",
+    back: "A closing order that must be executed at or better than a specified price."
+  },
+  {
+    id: 253,
+    front: "What is a not-held order?",
+    back: "An order giving the broker discretion over price and time."
+  },
+  {
+    id: 254,
+    front: "What is a good-till-date order?",
+    back: "An order active until a specified date."
+  },
+  {
+    id: 255,
+    front: "What is a good-till-canceled order?",
+    back: "An order active until executed or canceled."
+  },
+  {
+    id: 256,
+    front: "What is a discretionary trade?",
+    back: "A trade where the rep chooses action, amount, or asset."
+  },
+  {
+    id: 257,
+    front: "What is a non-discretionary trade?",
+    back: "A trade where the customer specifies action, amount, and asset."
+  },
+  {
+    id: 258,
+    front: "What is a wrap fee?",
+    back: "A single fee covering advisory and transaction services."
+  },
+  {
+    id: 259,
+    front: "What is a prime broker?",
+    back: "A firm providing clearing, custody, and financing to hedge funds."
+  },
+  {
+    id: 260,
+    front: "What is a DVP account?",
+    back: "Delivery-versus-payment settlement for institutions."
+  },
+  {
+    id: 261,
+    front: "What is an RVP account?",
+    back: "Receive-versus-payment settlement for institutions."
+  },
+  {
+    id: 262,
+    front: "What is a trade blotter?",
+    back: "A daily record of all trades executed by a firm."
+  },
+  {
+    id: 263,
+    front: "What is a margin disclosure statement?",
+    back: "A document explaining the risks of margin trading."
+  },
+  {
+    id: 264,
+    front: "What is a hypothecation agreement?",
+    back: "Allows a broker to pledge customer securities as collateral."
+  },
+  {
+    id: 265,
+    front: "What is rehypothecation?",
+    back: "A broker repledging customer securities to a bank for a loan."
+  }
+);
+// --- Flashcards Batch 4: Domain 4 Append ---
+FLASHCARDS.domain4.push(
+  {
+    id: 351,
+    front: "What is Regulation BI?",
+    back: "A rule requiring broker-dealers to act in the best interest of retail customers."
+  },
+  {
+    id: 352,
+    front: "What is Form CRS?",
+    back: "A customer relationship summary required for retail clients."
+  },
+  {
+    id: 353,
+    front: "What is a retail investor?",
+    back: "An individual investor who is not institutional."
+  },
+  {
+    id: 354,
+    front: "What is an institutional investor?",
+    back: "A large entity such as a bank, insurance company, or pension fund."
+  },
+  {
+    id: 355,
+    front: "What is a qualified institutional buyer (QIB)?",
+    back: "An institution with at least $100 million in securities."
+  },
+  {
+    id: 356,
+    front: "What is Regulation D Rule 506(c)?",
+    back: "Allows general solicitation if all investors are accredited."
+  },
+  {
+    id: 357,
+    front: "What is an accredited investor?",
+    back: "An investor meeting income or net worth thresholds."
+  },
+  {
+    id: 358,
+    front: "What is a private placement memorandum?",
+    back: "Disclosure document for private offerings."
+  },
+  {
+    id: 359,
+    front: "What is a qualified purchaser?",
+    back: "An investor with $5 million in investments."
+  },
+  {
+    id: 360,
+    front: "What is a statutory disqualification?",
+    back: "A ban from the industry due to certain violations or convictions."
+  },
+  {
+    id: 361,
+    front: "What is a fidelity bond?",
+    back: "Insurance protecting firms from employee theft."
+  },
+  {
+    id: 362,
+    front: "What is a regulatory inquiry?",
+    back: "A request for information from a regulator."
+  },
+  {
+    id: 363,
+    front: "What is a customer complaint?",
+    back: "Any written grievance from a customer."
+  },
+  {
+    id: 364,
+    front: "What is a reportable event?",
+    back: "Certain violations or actions that must be reported to FINRA."
+  },
+  {
+    id: 365,
+    front: "What is a blue-sky filing?",
+    back: "State-level registration or notice filing for securities."
+  }
+);
