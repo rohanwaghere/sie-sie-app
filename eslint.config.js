@@ -15,7 +15,8 @@ module.exports = [
         fetch: "readonly",
         EXAMS: "readonly",
         QUESTIONS: "readonly",
-        FLASHCARDS: "readonly"
+        FLASHCARDS: "readonly",
+        console: "readonly"
       }
     },
     rules: {
