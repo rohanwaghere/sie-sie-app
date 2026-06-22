@@ -204,15 +204,20 @@ function getQuestionsForTopic() {
 }
 
 function updateQuestionPerformance(id, correct) {
-  // mastery scoring
-  if (!progress.questions[id].streak) progress.questions[id].streak = 0;
+  if (!progress.questions[id]) {
+    progress.questions[id] = { correct: 0, incorrect: 0, streak: 0, mastery: "Needs Work" };
+  }
 
+  // update counts
   if (correct) {
+    progress.questions[id].correct++;
     progress.questions[id].streak++;
-    } else {
+  } else {
+    progress.questions[id].incorrect++;
     progress.questions[id].streak = 0;
   }
 
+  // mastery scoring
   if (progress.questions[id].streak >= 3) {
     progress.questions[id].mastery = "Mastered";
   } else if (progress.questions[id].streak === 2) {
@@ -221,13 +226,11 @@ function updateQuestionPerformance(id, correct) {
     progress.questions[id].mastery = "Developing";
   } else {
     progress.questions[id].mastery = "Needs Work";
-  }}
-
-  if (correct) progress.questions[id].correct++;
-  else progress.questions[id].incorrect++;
+  }
 
   saveProgress();
 }
+
 
 function getNextQuestion() {
   const questions = getQuestionsForTopic();
