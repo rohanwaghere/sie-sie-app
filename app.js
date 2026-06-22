@@ -259,8 +259,7 @@ function renderQuizQuestion() {
         .join("<br/>")}
       <div id="explanation"></div>
       <button onclick="renderQuizQuestion()">Next</button>
-    </div>
-  `;
+    </div>`;
 }
 
 function checkAnswer(id, selectedIndex) {
