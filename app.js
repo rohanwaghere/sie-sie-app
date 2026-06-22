@@ -287,11 +287,12 @@ function checkAnswer(id, selectedIndex) {
 function renderExamSelect() {
   const container = document.getElementById("exam-select");
   container.innerHTML =
-      `<button onclick="startRandomExam()">Random Exam</button>` +
+    `<button onclick="startRandomExam()">Random Exam</button>` +
     EXAMS.map(exam =>
       `<button onclick="setExam(${exam.id})">${exam.name}</button>`
     ).join("");
 }
+
 
 function startRandomExam() {
   const exam = generateRandomExam();
