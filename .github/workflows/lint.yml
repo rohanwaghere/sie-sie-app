@@ -1,25 +1,25 @@
-name: Lint and Validate JS
+name: Lint JavaScript
 
 on:
   push:
+    branches: [ "main" ]
   pull_request:
-
-permissions:
-  contents: read
+    branches: [ "main" ]
 
 jobs:
   lint:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
-      - name: Install Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
 
-      - name: Install ESLint
-        run: npm install eslint --save-dev
+    - name: Install dependencies
+      run: npm install
 
-      - name: Run ESLint
-        run: npx eslint . --ext .js --config eslint.config.js
+    - name: Run ESLint
+      run: npx eslint . --ext .js --config eslint.config.js
