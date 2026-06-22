@@ -353,7 +353,16 @@ function prevExamQuestion() {
 
 function nextExamQuestion() {
   const exam = EXAMS.find(e => e.id === currentExamId);
-  currentExamQuestionIndex =
-    (currentExamQuestionIndex + 1) % exam.questionIds.length;
+  currentExamQuestionIndex++;
+
+if (currentExamQuestionIndex >= exam.questionIds.length) {
+  const score = exam.questionIds.filter(id => {
+    const stats = progress.questions[id];
+    return stats && stats.correct > stats.incorrect;
+  }).length;
+
+  showExamResults(score, exam.questionIds.length);
+  return;
+}
   renderExamQuestion();
 }
