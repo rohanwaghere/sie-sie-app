@@ -270,9 +270,16 @@ function checkAnswer(id, selectedIndex) {
 function renderExamSelect() {
   const container = document.getElementById("exam-select");
 
-  container.innerHTML = EXAMS.map(
-    exam => `<button onclick="setExam(${exam.id})">${exam.name}</button>`
+  container.innerHTML = `<button onclick="startRandomExam()">Random Exam</button>` + EXAMS.map(exam => `<button onclick="setExam(${exam.id})">${exam.name}</button>`
   ).join(" ");
+}
+
+function startRandomExam() {
+  const exam = generateRandomExam();
+  currentExamId = exam.id;
+  currentExamQuestionIndex = 0;
+  window._randomExam = exam; // store in memory
+  renderExamQuestion();
 }
 
 function setExam(id) {
@@ -282,7 +289,10 @@ function setExam(id) {
 }
 
 function renderExamQuestion() {
-  const exam = EXAMS.find(e => e.id === currentExamId);
+  const exam = window._randomExam?.id === currentExamId
+  ? window._randomExam
+  : EXAMS.find(e => e.id === currentExamId);
+
   const questions = exam.questionIds.map(id =>
     Object.values(QUESTIONS).flat().find(q => q.id === id)
   );
