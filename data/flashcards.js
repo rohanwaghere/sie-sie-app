@@ -1,10 +1,7 @@
 // data/flashcards.js
 
 const FLASHCARDS = [
-  // -------------------------
   // DOMAIN 1 — CAPITAL MARKETS
-  // -------------------------
-
   {
     id: 1,
     topic: "Capital Markets",
@@ -41,10 +38,7 @@ const FLASHCARDS = [
     back: "An additional issuance of shares by a company that is already public."
   },
 
-  // -------------------------
   // DOMAIN 2 — PRODUCTS & RISKS
-  // -------------------------
-
   {
     id: 101,
     topic: "Products & Risks",
@@ -80,11 +74,43 @@ const FLASHCARDS = [
     front: "What is credit risk?",
     back: "The risk that an issuer cannot make interest or principal payments."
   },
+  {
+    id: 106,
+    topic: "Products & Risks",
+    type: "concept",
+    front: "What is liquidity risk?",
+    back: "The risk that an investor cannot easily sell a security at a fair price."
+  },
+  {
+    id: 107,
+    topic: "Products & Risks",
+    type: "concept",
+    front: "What is inflation risk?",
+    back: "The risk that rising prices erode the real value of returns."
+  },
+  {
+    id: 108,
+    topic: "Products & Risks",
+    type: "concept",
+    front: "What is a mutual fund?",
+    back: "A pooled investment vehicle that invests in a diversified portfolio of securities."
+  },
+  {
+    id: 109,
+    topic: "Products & Risks",
+    type: "concept",
+    front: "What is an ETF?",
+    back: "An exchange-traded fund that trades like a stock and holds a basket of securities."
+  },
+  {
+    id: 110,
+    topic: "Products & Risks",
+    type: "concept",
+    front: "What is a REIT?",
+    back: "A company that owns or operates income-producing real estate."
+  },
 
-  // -------------------------
   // DOMAIN 3 — TRADING & ACCOUNTS
-  // -------------------------
-
   {
     id: 201,
     topic: "Trading & Accounts",
@@ -120,11 +146,43 @@ const FLASHCARDS = [
     front: "What is Regulation T?",
     back: "The rule requiring 50% initial margin for stock purchases."
   },
+  {
+    id: 206,
+    topic: "Trading & Accounts",
+    type: "concept",
+    front: "What is a cash account?",
+    back: "An account in which the customer must pay in full for all purchases."
+  },
+  {
+    id: 207,
+    topic: "Trading & Accounts",
+    type: "concept",
+    front: "What is a joint account?",
+    back: "An account owned by two or more individuals."
+  },
+  {
+    id: 208,
+    topic: "Trading & Accounts",
+    type: "concept",
+    front: "What is a custodial account?",
+    back: "An account managed by a custodian for the benefit of a minor."
+  },
+  {
+    id: 209,
+    topic: "Trading & Accounts",
+    type: "concept",
+    front: "What is suitability?",
+    back: "The requirement that recommendations must be appropriate for the customer's profile and objectives."
+  },
+  {
+    id: 210,
+    topic: "Trading & Accounts",
+    type: "concept",
+    front: "What is a discretionary account?",
+    back: "An account in which the registered representative can make trades without prior customer approval."
+  },
 
-  // -------------------------
   // DOMAIN 4 — REGULATORY FRAMEWORK
-  // -------------------------
-
   {
     id: 301,
     topic: "Regulatory Framework",
@@ -159,5 +217,40 @@ const FLASHCARDS = [
     type: "concept",
     front: "What is Regulation SP?",
     back: "The rule requiring firms to protect customer privacy and data."
+  },
+  {
+    id: 306,
+    topic: "Regulatory Framework",
+    type: "concept",
+    front: "What is MSRB?",
+    back: "The Municipal Securities Rulemaking Board, which writes rules for municipal securities dealers."
+  },
+  {
+    id: 307,
+    topic: "Regulatory Framework",
+    type: "concept",
+    front: "What is insider trading?",
+    back: "Illegal trading based on material, nonpublic information."
+  },
+  {
+    id: 308,
+    topic: "Regulatory Framework",
+    type: "concept",
+    front: "What is a registered representative?",
+    back: "An individual licensed to solicit and sell securities products."
+  },
+  {
+    id: 309,
+    topic: "Regulatory Framework",
+    type: "concept",
+    front: "What is continuing education?",
+    back: "Ongoing training required to maintain registration."
+  },
+  {
+    id: 310,
+    topic: "Regulatory Framework",
+    type: "concept",
+    front: "What is a self-regulatory organization (SRO)?",
+    back: "An organization, like FINRA, that writes and enforces rules for its members."
   }
 ];
