@@ -12,7 +12,10 @@ module.exports = [
         document: "readonly",
         localStorage: "readonly",
         location: "readonly",
-        fetch: "readonly"
+        fetch: "readonly",
+        EXAMS: "readonly",
+        QUESTIONS: "readonly",
+        FLASHCARDS: "readonly"
       }
     },
     rules: {
