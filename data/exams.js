@@ -69,3 +69,35 @@ EXAMS.push({
     339, 340, 341, 342, 343, 344, 345
   ]
 });
+// ---------------------------
+// EXAM RESULTS SCREEN
+// ---------------------------
+
+function showExamResults(score, total) {
+  const percent = Math.round((score / total) * 100);
+  const passed = percent >= 70;
+
+  document.getElementById("card-container").innerHTML = `
+    <div class="question">
+      <h2>Exam Complete</h2>
+      <p><strong>Score:</strong> ${score} / ${total}</p>
+      <p><strong>Percentage:</strong> ${percent}%</p>
+      <p style="color:${passed ? "lightgreen" : "red"};font-size:1.2rem;">
+        <strong>${passed ? "PASS" : "FAIL"}</strong>
+      </p>
+
+      <button onclick="restartExam()">Retake Exam</button>
+      <button onclick="returnToMenu()">Back to Menu</button>
+    </div>
+  `;
+}
+
+function restartExam() {
+  currentExamQuestionIndex = 0;
+  renderExamQuestion();
+}
+
+function returnToMenu() {
+  mode = "exam";
+  renderExamSelect();
+}
