@@ -6,7 +6,14 @@ module.exports = [
     files: ["**/*.js"],
     languageOptions: {
       ecmaVersion: "latest",
-      sourceType: "module"
+      sourceType: "module",
+      globals: {
+        window: "readonly",
+        document: "readonly",
+        localStorage: "readonly",
+        location: "readonly",
+        fetch: "readonly"
+      }
     },
     rules: {
       "no-unused-vars": "warn",
