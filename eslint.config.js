@@ -4,6 +4,7 @@ module.exports = [
   js.configs.recommended,
   {
     files: ["**/*.js"],
+    ignores: ["eslint.config.js"],
     languageOptions: {
       ecmaVersion: "latest",
       sourceType: "module",
