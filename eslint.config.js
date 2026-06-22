@@ -16,7 +16,9 @@ module.exports = [
         EXAMS: "readonly",
         QUESTIONS: "readonly",
         FLASHCARDS: "readonly",
-        console: "readonly"
+        console: "readonly",
+        generateRandomExam: "readonly",
+        showExamResults: "readonly"
       }
     },
     rules: {
