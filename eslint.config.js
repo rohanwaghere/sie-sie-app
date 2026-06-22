@@ -18,7 +18,11 @@ module.exports = [
         FLASHCARDS: "readonly",
         console: "readonly",
         generateRandomExam: "readonly",
-        showExamResults: "readonly"
+        showExamResults: "readonly",
+        currentExamQuestionIndex: "writable",
+        renderExamQuestion: "readonly",
+        mode: "writable",
+        renderExamSelect: "readonly"
       }
     },
     rules: {
