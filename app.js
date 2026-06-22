@@ -204,9 +204,24 @@ function getQuestionsForTopic() {
 }
 
 function updateQuestionPerformance(id, correct) {
-  if (!progress.questions[id]) {
-    progress.questions[id] = { correct: 0, incorrect: 0 };
+  // mastery scoring
+  if (!progress.questions[id].streak) progress.questions[id].streak = 0;
+
+  if (correct) {
+    progress.questions[id].streak++;
+    } else {
+    progress.questions[id].streak = 0;
   }
+
+  if (progress.questions[id].streak >= 3) {
+    progress.questions[id].mastery = "Mastered";
+  } else if (progress.questions[id].streak === 2) {
+    progress.questions[id].mastery = "Strong";
+  } else if (progress.questions[id].streak === 1) {
+    progress.questions[id].mastery = "Developing";
+  } else {
+    progress.questions[id].mastery = "Needs Work";
+  }}
 
   if (correct) progress.questions[id].correct++;
   else progress.questions[id].incorrect++;
