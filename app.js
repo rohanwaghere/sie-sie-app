@@ -289,7 +289,7 @@ function renderExamSelect() {
   container.innerHTML =
     `<button onclick="startRandomExam()">Random Exam</button>` +
     EXAMS.map(exam =>
-      `<button onclick="setExam(${exam.id})">${exam.name}</button>`
+    `<button onclick="setExam(${exam.id})">${exam.name}</button>`
     ).join("");
 }
 
