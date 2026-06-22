@@ -101,3 +101,21 @@ function returnToMenu() {
   mode = "exam";
   renderExamSelect();
 }
+// --- Random Exam Generator ---
+function generateRandomExam() {
+  const allQuestions = [
+    ...QUESTIONS.domain1,
+    ...QUESTIONS.domain2,
+    ...QUESTIONS.domain3,
+    ...QUESTIONS.domain4
+  ];
+
+  const shuffled = allQuestions.sort(() => Math.random() - 0.5);
+  const selected = shuffled.slice(0, 75).map(q => q.id);
+
+  return {
+    id: Date.now(),
+    name: "Random Exam",
+    questionIds: selected
+  };
+}
