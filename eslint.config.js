@@ -1,13 +1,10 @@
-const js = require("@eslint/js");
-
 module.exports = [
-  js.configs.recommended,
   {
     files: ["**/*.js"],
     ignores: ["eslint.config.js"],
     languageOptions: {
       ecmaVersion: "latest",
-      sourceType: "module",
+      sourceType: "script",
       globals: {
         window: "readonly",
         document: "readonly",
